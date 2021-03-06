@@ -3,6 +3,7 @@
     <link rel="icon" type="image/ico" href="resource/favicon.png"/>
     <meta charset="utf-8">
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         p {
             background-image: url('test.png');
@@ -11,21 +12,48 @@
             background-image: url('resource/p2.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            background-blend-mode: lighten;
-            opacity: 0.5;
+            /* background-blend-mode: lighten; */
+            /* opacity: 0.5; */
 
         }
     </style>
 </head>
 
 <body>
-    <audio controls autoplay loop style="display:none;">
-        <source src="bgm.mp3" type="audio/mp3">
+    <audio id="aud" controls loop style="display:none;">
+        <source src="resource/bgm.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
-    <p class='background' onmousemove="changeColor(this)" onmouseleave="changeColorBack(this)">The first paragraph</p>
-    <p class="background" onmousemove="changeColor(this)" onmouseleave="changeColorBack(this)">The second paragraph</p>
-    <p class="background" onmousemove="changeColor(this)" onmouseleave="changeColorBack(this)">The third paragraph</p>
+    <div id="popWindow" class="popWindow">
+
+    </div>
+    <div id="maskLayer"  class="maskLayer">  
+        <h1 style="text-align:left">家辉·林·吉 同志,</h1>
+        <h1 style="text-align:center">组织祝您生日快乐！</h1>
+        <h2 style="text-align:center">本来是打算送你件苏联红军的野战斗篷的。</h2>
+        <h2 style="text-align:center">但是我大意了，没有闪。前几天准备下单的时候发现已经下架了。。</h2>
+        <h2 style="text-align:center">然后突然间，很快啊，脑子里就闪过了之前偶然得知
+            [.su]的苏联域名居然还能申请的事。</h2>
+        <h2 style="text-align:center">于是我就光速下单了。</h2>
+
+        <h2 style="text-align:center">不过域名的前缀我也不知道用什么好。</h2>
+        <h2 style="text-align:center">看到你所有网名都是[背包小吉]，</h2>
+        <h2 style="text-align:center">我就擅自用[Bag Ji]了。</h2>
+        <button id="playB" class="playB" onclick="playAudio()" type="button">我是混在文字中间的一个按钮</button>
+        <h2 style="text-align:center">嘛。。总之就是这样。</h2>
+        <h2 style="text-align:center">这个域名就是你的生日礼物了(x</h2>
+        <h2 style="text-align:center">如果你想用起来的话，</h2>
+        <h2 style="text-align:center">之后我可以帮你建个你的个人主页之类的。</h2>
+        <h2 style="text-align:center; font-size: 20px;">（连载你的脑洞小说？）</h2>
+        <br/><br/><br/><br/>
+        <h2 style="text-align:center">祝</h2>
+        <h2 style="text-align:center">平安顺遂，前程似锦。</h2>
+        <br>
+        <h2 style="text-align:left">  你忠诚的，</h2>
+        <h2 style="text-align:left">  叶砸 同志</h2>
+
+
+    </div>
 </body>
 <footer></footer>
 <!--
