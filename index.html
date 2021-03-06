@@ -1,17 +1,25 @@
 <head>
     <title>Happy Birthday!</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/ico" href="resource/favicon.png"/>
     <meta charset="utf-8">
     <script type="text/javascript" src="index.js"></script>
     <style>
         p {
             background-image: url('test.png');
         }
+        body {
+            background-image: url('resource/p2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: lighten;
+            opacity: 0.5;
+
+        }
     </style>
 </head>
 
 <body>
-    <audio controls loop>
+    <audio controls autoplay loop style="display:none;">
         <source src="bgm.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
